@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Anastasia's Code Blog]]></title>
+  <link href="http://akkrisan.github.io/blog/atom.xml" rel="self"/>
+  <link href="http://akkrisan.github.io/blog/"/>
+  <updated>2016-02-24T18:31:42-06:00</updated>
+  <id>http://akkrisan.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Anastasia Krisan]]></name>
+    <email><![CDATA[akkrisan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Setting Up Rails With HAML]]></title>
+    <link href="http://akkrisan.github.io/blog/blog/2016/02/24/setting-up-rails-with-haml/"/>
+    <updated>2016-02-24T17:13:07-06:00</updated>
+    <id>http://akkrisan.github.io/blog/blog/2016/02/24/setting-up-rails-with-haml</id>
+    <content type="html"><![CDATA[<ol>
+<li><p>Create a new rails project.</p>
+
+<pre><code class="`"> $ rails new projectName
+</code></pre></li>
+<li><p>Add &lsquo;haml&rsquo; and &lsquo;haml-rails&rsquo; to the Gemfile.</p>
+
+<pre><code class="`"> gem 'haml'
+ gem 'haml-rails'
+</code></pre></li>
+<li><p>In config/application.rb, add the following code inside the Application class:</p>
+
+<pre><code class="`"> config.generators do |g|
+   g.template_engine :haml
+ end
+</code></pre></li>
+<li><p>Run bundle install.</p>
+
+<pre><code class="`"> $ bundle install
+</code></pre></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
